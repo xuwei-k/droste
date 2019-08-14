@@ -77,3 +77,17 @@ java_library(
 )
 
 
+
+scala_import(
+    name = "kind_projector",
+    exports = [
+        "//3rdparty/jvm/org/scala_lang:scala_compiler",
+        "//3rdparty/jvm/org/scala_lang:scala_library"
+    ],
+    jars = [
+        "//external:jar/io_higherkindness_droste_org/typelevel/kind_projector_2_11"
+    ],
+    visibility = [
+        "//visibility:public"
+    ]
+)

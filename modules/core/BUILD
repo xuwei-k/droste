@@ -4,7 +4,7 @@ scala_library(
     name = "core",
     srcs = glob(["**/*.scala"]),
     plugins = [
-        "//external:io_higherkindness_droste_spire_math_kind_projector_jar",
+        "//external:io_higherkindness_droste_typelevel_kind_projector_jar",
     ],
     scalacopts = [
         "-encoding", "UTF-8",
