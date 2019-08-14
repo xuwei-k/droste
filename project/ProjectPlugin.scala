@@ -34,7 +34,7 @@ object ProjectPlugin extends AutoPlugin {
         scalaOrganization.value % "scala-compiler" % scalaVersion.value % Provided,
         scalaOrganization.value % "scala-reflect"  % scalaVersion.value % Provided,
         compilerPlugin(
-          "org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.patch)
+          "org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.patch)
       ))
 
     lazy val noPublishSettings: Seq[Def.Setting[_]] = Seq(
